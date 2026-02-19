@@ -1,0 +1,37 @@
+# Telegram Bot Configuration
+
+[bot]
+# Your Telegram Bot Token from @BotFather
+token = "YOUR_BOT_TOKEN_HERE"
+
+[limits]
+# Maximum file size in MB (Telegram limit is 50MB for bots)
+max_file_size_mb = 50
+# Maximum video duration in seconds
+max_video_duration_seconds = 3600
+
+[cache]
+# Cache retention time in hours (default: 24 hours = 1 day)
+retention_hours = 24
+# Cache directory path
+cache_dir = "./cache"
+
+[queue]
+# Maximum queue size
+max_size = 10
+# Number of parallel download workers
+parallel_workers = 1
+
+[logging]
+# Log file path
+log_file = "./bot.log"
+# Log retention in days
+retention_days = 7
+# Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_level = "INFO"
+
+[whitelist]
+# List of allowed user IDs (empty list means all users allowed)
+user_ids = []
+# List of allowed group/chat IDs (empty list means all groups allowed)
+group_ids = []
