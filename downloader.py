@@ -99,7 +99,7 @@ class MediaDownloader:
                 'merge_output_format': 'mp4',
                 'postprocessors': [{
                     'key': 'FFmpegVideoConvertor',
-                    'preferedformat': 'mp4',
+                    'preferredformat': 'mp4',
                 }],
             }
             
