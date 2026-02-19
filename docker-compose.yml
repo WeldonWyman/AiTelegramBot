@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-media-bot
+    restart: unless-stopped
+    volumes:
+      # Mount config file
+      - ./config.toml:/app/config.toml:ro
+      # Mount cache directory for persistence
+      - ./cache:/app/cache
+      # Mount logs directory for persistence
+      - ./logs:/app/logs
+    environment:
+      # Optional: Override config with environment variables
+      - TZ=UTC
