@@ -78,6 +78,8 @@ The bot is configured via `config.toml` file:
 
 ## Usage
 
+### Running Locally
+
 1. Start the bot:
 ```bash
 python bot.py
@@ -88,6 +90,23 @@ python bot.py
    - `/help` - Show help message
    - `/status` - Check queue status
    - Send any media URL to download it
+
+### Running with Docker
+
+1. Build and start the bot:
+```bash
+docker-compose up -d
+```
+
+2. View logs:
+```bash
+docker-compose logs -f
+```
+
+3. Stop the bot:
+```bash
+docker-compose down
+```
 
 ### Example URLs Supported
 - YouTube: `https://www.youtube.com/watch?v=...`
